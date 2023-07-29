@@ -99,7 +99,7 @@ The `order_manager` values are what configure the algorithm per the **How it wor
 * `rebalance_interval` - described as *V* in Part 3. This is the number of "ticks" to use to compute the average price for rebalancing. If your cronjob runs in 1 minute intervals, then this value is the wait time in minutes, as an integer.
 * `rebalance_threshold` - described as *W* in Part 3. This is the delta between percentage of money vs crypto that will trigger a rebalance if exceeded. A value of 50% should be represented as 0.5.
 * `window_factor` - described in Part 4. This determines the power to raise the `price_increment_ratio` to when the "window size" is incremented after an order is hit; where the formula is `price_increment_ratio^((window_factor * window_size) +1)`. This can be any decimal greater than zero. Windows are disabled and this value is ignored if `window_duration` is unset.
-* `window_duration` - described in Part 4. This is the number of "ticks" that the algorithm will wait before decrementing the window size if no orders are hit, as an integer. Windows are disabled and this value is ignored if this value is unset.
+* `window_duration` - described in Part 4. This is the number of "ticks" that the algorithm will wait before decrementing the window size if no orders are hit, as an integer. Windows are disabled if this value is unset.
 
 ## Example Credentials YAML
 
