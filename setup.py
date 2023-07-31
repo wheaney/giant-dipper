@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name='giant-dipper',
     version='0.1',
-    packages=['robin-stocks', 'PyYAML', 'pyotp', 'numpy'],
+    packages=['robin-stocks', 'PyYAML', 'pyotp'],
     url='https://github.com/wheaney/giant-dipper',
     license='GPL-3.0-only',
     author='Wayne Heaney',
