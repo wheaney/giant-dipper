@@ -1,2 +1,3 @@
 *.yml
 *Script.py
+!.github/workflows/python-package.yml
