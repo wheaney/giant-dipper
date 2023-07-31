@@ -89,7 +89,7 @@ class OrderManager:
 
     # return the next quantity given the price and multiplier, taking into account the order holdings threshold
     # and whether the opposite side has recently run against limits
-    def next_quantity(self, side, base_price, for_price, multiplier):
+    def next_quantity(self, side, base_price, for_price, multiplier):  # noqa: C901
         if side == OrderSide.BUY and self.current_buying_power / for_price <= self.minimum_quantity:
             return 0
 
@@ -202,7 +202,7 @@ class OrderManager:
         return math.ceil(duration_remaining / self.window_duration) if self.window_duration else 0
 
     # checks whether rebalancing is needed, and executes if necessary
-    def check_rebalance(self):
+    def check_rebalance(self):  # noqa: C901
         if self.rebalance_interval:
             rebalance_to_price = self.state_manager.record_check_rebalance(self.current_price, self.rebalance_interval,
                                                                            self.rebalance_threshold)
@@ -257,7 +257,8 @@ class OrderManager:
         if self.window_duration:
             open_order = self.state_manager.open_orders[side]
             window_duration_remaining = open_order['window_duration_remaining']
-            open_order['window_duration_remaining'] = window_duration_remaining - 1 if window_duration_remaining > 0 else 0
+            open_order['window_duration_remaining'] = \
+                window_duration_remaining - 1 if window_duration_remaining > 0 else 0
 
         return self.should_replace_order(side)
 

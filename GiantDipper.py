@@ -28,7 +28,7 @@ if len(argv) > 1 and exists(argv[1]):
                     state_manager=state,
                     price_increment_ratio=order_manager_config['price_increment_ratio'],
                     order_quantity_ratio=order_manager_config['order_holdings_threshold'] /
-                                         order_manager_config['quantity_threshold_ratio'],
+                    order_manager_config['quantity_threshold_ratio'],
                     order_holdings_threshold=order_manager_config['order_holdings_threshold'],
                     window_duration=order_manager_config.get('window_duration'),
                     window_factor=order_manager_config.get('window_factor', 1),
@@ -59,7 +59,7 @@ if len(argv) > 1 and exists(argv[1]):
                             state_manager=comparison_state,
                             price_increment_ratio=comparison_order_manager_config['price_increment_ratio'],
                             order_quantity_ratio=comparison_order_manager_config['order_holdings_threshold'] /
-                                                 comparison_order_manager_config['quantity_threshold_ratio'],
+                            comparison_order_manager_config['quantity_threshold_ratio'],
                             order_holdings_threshold=comparison_order_manager_config['order_holdings_threshold'],
                             window_duration=comparison_order_manager_config.get('window_duration'),
                             window_factor=comparison_order_manager_config.get('window_factor', 1),

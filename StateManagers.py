@@ -173,6 +173,7 @@ class InMemoryStateManager(BaseStateManager):
     def record_order(self, rh_order, for_rebalance=False):
         super().record_order(rh_order, for_rebalance)
 
+
 # keeps track of the state of each tick for the purposes of visual plotting of data
 class GraphingStateManager(InMemoryStateManager):
     def __init__(self):
