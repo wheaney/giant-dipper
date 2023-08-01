@@ -1,3 +1,6 @@
 *.yml
 *Script.py
 !.github/workflows/python-package.yml
+/giant_dipper.egg-info/
+/dist/
+/.pytest_cache/

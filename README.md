@@ -69,7 +69,7 @@ To use this algorithm:
 4. Set up your credentials YAML in the code directory. See the example below.
 5. Take a deep breath.
 6. Set up a cronjob or some other trigger on a time interval
-    1. The crontab config to run this every minute would look like: `* * * * * cd /path/to/giant-dipper && pipenv run python GiantDipper.py configuration.yml >> ~/giant_dipper_cron`
+    1. The crontab config to run this every minute would look like: `* * * * * cd /path/to/giant-dipper && pipenv run python giant-dipper/GiantDipper.py configuration.yml >> ~/giant_dipper_cron`
         1. This will write output to the file at `~/giant_dipper_cron`, you can use that to track orders and metrics.
 
 ## Example Configuration YAML
