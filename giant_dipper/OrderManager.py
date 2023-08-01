@@ -1,8 +1,8 @@
 import math
 import sys
 
-from OrderSides import OrderSide
-from OrderStatuses import OrderStatus, OPEN_ORDER_STATUSES, REPLACE_ORDER_STATUSES
+from giant_dipper.OrderSides import OrderSide
+from giant_dipper.OrderStatuses import OrderStatus, OPEN_ORDER_STATUSES, REPLACE_ORDER_STATUSES
 
 BUY_ORDER_COLLAR = 1.0025
 SELL_ORDER_COLLAR = 1 / BUY_ORDER_COLLAR

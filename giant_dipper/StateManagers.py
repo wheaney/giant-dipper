@@ -2,7 +2,7 @@ from os.path import exists
 
 import yaml
 
-from OrderSides import OrderSide
+from giant_dipper.OrderSides import OrderSide
 
 
 def empty_metrics():

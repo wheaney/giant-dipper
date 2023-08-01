@@ -4,10 +4,10 @@ from sys import argv
 
 import yaml
 
-from OrderManager import OrderManager
-from OrderServices import RobinHoodOrderService, RealQuoteFakeOrderService
-from StateManagers import FileStateManager
-from RobinHoodAuth import robinhood_auth
+from giant_dipper.OrderManager import OrderManager
+from giant_dipper.OrderServices import RobinHoodOrderService, RealQuoteFakeOrderService
+from giant_dipper.StateManagers import FileStateManager
+from giant_dipper.RobinHoodAuth import robinhood_auth
 
 if len(argv) > 1 and exists(argv[1]):
     with open(argv[1]) as configuration_file:

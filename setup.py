@@ -11,7 +11,7 @@ def generate_long_description_file():
 
 setup(
     name='giant_dipper',
-    version='0.1.2',
+    version='0.1.3',
     packages=['giant_dipper'],
     install_requires=['robin-stocks', 'PyYAML', 'pyotp'],
     url='https://github.com/wheaney/giant-dipper',

@@ -6,9 +6,9 @@ from time import sleep
 import robin_stocks
 import yaml
 
-from OrderManager import BUY_ORDER_COLLAR, SELL_ORDER_COLLAR
-from OrderSides import OrderSide
-from OrderStatuses import OPEN_ORDER_STATUSES, OrderStatus
+from giant_dipper.OrderManager import BUY_ORDER_COLLAR, SELL_ORDER_COLLAR
+from giant_dipper.OrderSides import OrderSide
+from giant_dipper.OrderStatuses import OPEN_ORDER_STATUSES, OrderStatus
 
 
 # All calls delegate to RobinHood APIs. if disallow_orders is set, an Exception will be raised if any attempts to
