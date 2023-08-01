@@ -1,10 +1,10 @@
 import math
 from unittest import TestCase
 
-from OrderManager import OrderManager
-from OrderSides import OrderSide
-from OrderStatuses import OrderStatus
-from StateManagers import InMemoryStateManager
+from giant_dipper.OrderManager import OrderManager
+from giant_dipper.OrderSides import OrderSide
+from giant_dipper.OrderStatuses import OrderStatus
+from giant_dipper.StateManagers import InMemoryStateManager
 
 
 class FakeOrderService:
